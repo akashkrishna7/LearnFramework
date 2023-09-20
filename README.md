@@ -41,9 +41,9 @@ Before you begin, ensure you have the following installed:
 
 # 1. Clone the repository:
 
-   HTTPS : ```https://github.com/akashkrishna7/LearnFramework.git
-   SSH: ```git@github.com:akashkrishna7/LearnFramework.git
-   Github CLI: ```gh repo clone akashkrishna7/LearnFramework
+   HTTPS : ```https://github.com/akashkrishna7/LearnFramework.git```
+   SSH: ```git@github.com:akashkrishna7/LearnFramework.git```
+   Github CLI: ```gh repo clone akashkrishna7/LearnFramework```
 
 
 # 2. Set up WebDriver:
@@ -54,7 +54,7 @@ Before you begin, ensure you have the following installed:
   
   Build the project using Maven:
   
-  ```mvn clean install
+  ```mvn clean install```
 
 ### Customization
 
