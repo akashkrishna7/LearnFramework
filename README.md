@@ -37,18 +37,18 @@ Before you begin, ensure you have the following installed:
 - IDE (e.g., IntelliJ IDEA or Eclipse)
   
 
-### Installation
+## Installation
 
-# 1. Clone the repository:
+### 1. Clone the repository:
 
-   HTTPS : ```https://github.com/akashkrishna7/LearnFramework.git```
+  ** HTTPS :** ```https://github.com/akashkrishna7/LearnFramework.git```
    
-   SSH: ```git@github.com:akashkrishna7/LearnFramework.git```
+**   SSH:** ```git@github.com:akashkrishna7/LearnFramework.git```
    
-   Github CLI: ```gh repo clone akashkrishna7/LearnFramework```
+ **  Github CLI:** ```gh repo clone akashkrishna7/LearnFramework```
 
 
-# 2. Set up WebDriver:
+### 2. Set up WebDriver:
 
   Download the appropriate WebDriver for your browser and system.
   Update the WebDriver path in the WebBase.java class if necessary.
@@ -58,7 +58,7 @@ Before you begin, ensure you have the following installed:
   
   ```mvn clean install```
 
-### Customization
+## Customization
 
 Customize the WebBase.java class for specific WebDriver configurations.
 Modify and expand the sample test cases in the web.test package.
