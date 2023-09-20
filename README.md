@@ -42,7 +42,9 @@ Before you begin, ensure you have the following installed:
 # 1. Clone the repository:
 
    HTTPS : ```https://github.com/akashkrishna7/LearnFramework.git```
+   
    SSH: ```git@github.com:akashkrishna7/LearnFramework.git```
+   
    Github CLI: ```gh repo clone akashkrishna7/LearnFramework```
 
 
