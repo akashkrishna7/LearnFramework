@@ -1,6 +1,7 @@
 package web;
 
 import config.URLConfig;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,19 +13,23 @@ public class WebBase {
 
     @BeforeClass
     public void setUp() {
+
         // Set the environment (e.g., "dev" or "prod") based on your configuration
         String environment = System.getProperty("test.environment", "dev");
 
         // Get the URL from the properties file
         String baseURL = URLConfig.getURLForEnvironment(environment);
 
-        // path to the ChromeDriver executable file.
-        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+        // Use WebDriverManager to setup ChromeDriver
+        WebDriverManager.chromedriver().setup();
 
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
-        driver = new ChromeDriver(options); // Using the instance variable 'driver'
+        WebDriver driver = new ChromeDriver(options);
+
         driver.get(baseURL);
+        // Assign the driver instance to your instance variable if needed
+        // this.driver = driver;
     }
 
     @AfterClass
